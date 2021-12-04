@@ -33,6 +33,7 @@ public class app {
         UserListingsGUI userListGUI = new UserListingsGUI(s, ic, db);
         ItemListingGUI itemListingGUI = new ItemListingGUI(s, ic, db);
         AvailableItemsGUI availableItemsGUI = new AvailableItemsGUI(s, db);
+        AccountCreationGUI accountCreationGUI = new AccountCreationGUI(s, lc, db);
         while(true){
             reader = new FileReader(active);
             bReader.close();
@@ -53,6 +54,9 @@ public class app {
             }
             if(page.equals("AvailableItems")){
                 page = availableItemsGUI.run();
+            }
+            if(page.equals("CreateAcc")){
+                page = accountCreationGUI.run();
             }
         }
     }
