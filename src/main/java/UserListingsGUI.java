@@ -109,7 +109,7 @@ public class UserListingsGUI {
                 return "UserListings";
             }
             else if(userInt >= (-1 * userListings.size()) && userInt < 0){
-                ilc.unlistItem(userListings.get((userInt - 1) * -1));
+                ilc.unlistItem(userListings.get((userInt + 1) * -1));
             }
         }
     }
