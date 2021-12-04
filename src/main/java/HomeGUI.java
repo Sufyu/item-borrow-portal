@@ -17,7 +17,7 @@ public class HomeGUI {
         String activeU = read.readLine();
 
         while(activeU == null) {
-            System.out.println("This is the home page. Press 1 to login. Press 2 to create an account.\n(The available user is username: user, password: pass\n");
+            System.out.println("This is the home page. Press 1 to login. Press 2 to create an account.");
             String userIn = input.nextLine();
             if (userIn.equals("1")) {
                 return "Login";
